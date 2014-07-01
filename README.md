@@ -64,6 +64,10 @@ As Valloric puts it:
 
 The [`.ycm_extra_conf.py`](./.ycm_extra_conf.py) contains everything to be up and running. Beware that you really need to customize it for it to work properly. Each library must be added by hand to use auto completion.
 
+### Bonus - `.editorconfig`
+
+To make sure everything is always formatted as you like, you can customize the [`.editorconfig`](./.editorconfig) file to suit your needs.
+
 ## Contributing
 
 Help is always more than welcome. If you want to take part in this project, please, make sure you read our [Contributing guidelines](./CONTRIBUTING.md).
