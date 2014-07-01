@@ -6,9 +6,10 @@
 **Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
 
 - [About](#about)
-- [How to...](#how-to)
-	- [How to install](#how-to-install)
-	- [How to use](#how-to-use)
+- [How to install and use](#how-to-install-and-use)
+- [Text editors](#text-editors)
+	- [Sublime Text - SublimeClang](#sublime-text---sublimeclang)
+	- [Vim - YouCompleteMe](#vim---youcompleteme)
 - [Contributing](#contributing)
 - [Copyright and License](#copyright-and-license)
 
@@ -35,21 +36,33 @@ Based on what we've learned on our [Moti project](http://github.com/weareleka/mo
 
 To put it in a nuttshell, it allows you to **write Arduino code, as you would write anything else !**
 
-## How to...
+## How to install and use
 
-### How to install
+The full procedure is detailed in [INSTALL.md](./INSTALL.md).
 
-The full procedure is detailed in [INSTALL.md](./INSTALL.md):
+## Text editors
 
-*	[Quick OS X installation](https://github.com/WeAreLeka/Arduino-Project/blob/master/INSTALL.md#os-x---1092)
-*	[Quick Linux installation](https://github.com/WeAreLeka/Arduino-Project/blob/master/INSTALL.md#ubuntu)
-*	[Full OS X installation](https://github.com/WeAreLeka/Arduino-Project/blob/master/INSTALL.md#full-installation-guide-for-os-x-1092)
+Because we are so awesome, we also provide your with 2 famous text editors configurations!
 
-It has been written for beginners as well as for advanced hackers.
+### Sublime Text - SublimeClang
 
-### How to use
+To code in C/C++, we highly recommend using [SublimeClang](https://github.com/quarnster/SublimeClang), even if the plugin is not maintained anymore. As far as we can tell, it works beautifully well and will save you a lot of time! :)
 
-The full procedure on how to use everything you've just installed is described in [USE.md](./USE.md).
+As [quarnster](https://github.com/quarnster/) puts it:
+
+> Clang plugin for Sublime Text 2 providing auto complete suggestions for C/C++/ObjC/ObjC++. It'll also optionally parse the code as it's typed and show errors and warnings.
+
+The [`bare-arduino.sublime-project`](./bare-arduino.sublime-project) contains all you need to be up and running. Feel free to customize it to your needs with different `flags` for example.
+
+### Vim - YouCompleteMe
+
+Vim is our default text editor and we use [Valloric](https://github.com/Valloric) incredible vim plugin, [YouCompleteMe](https://github.com/Valloric) for errors and code completion.
+
+As Valloric puts it:
+
+> YouCompleteMe is a fast, as-you-type, fuzzy-search code completion engine for Vim. It has several completion engines: an identifier-based engine that works with every programming language, a semantic, Clang-based engine that provides native semantic code completion for C/C++/Objective-C/Objective-C++ (from now on referred to as "the C-family languages"), a Jedi-based completion engine for Python, an OmniSharp-based completion engine for C# and an omnifunc-based completer that uses data from Vim's omnicomplete system to provide semantic completions for many other languages (Ruby, PHP etc.).
+
+The [`.ycm_extra_conf.py`](./.ycm_extra_conf.py) contains everything to be up and running. Beware that you really need to customize it for it to work properly. Each library must be added by hand to use auto completion.
 
 ## Contributing
 
@@ -57,6 +70,7 @@ Help is always more than welcome. If you want to take part in this project, plea
 
 ##Copyright and License
 
+```
 The MIT License (MIT)
 
 Copyright (c) 2014 Ladislas de Toldi - ladislas at weareleka dot com
@@ -78,3 +92,5 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+```
+
