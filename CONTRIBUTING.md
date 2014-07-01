@@ -1,4 +1,15 @@
-# Contributing To Moti
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
+
+- [Contributing to Bare-Arduino-Project](#contributing-to-bare-arduino-project)
+	- [Getting Started](#getting-started)
+	- [Making Changes](#making-changes)
+- [Additional Resources](#additional-resources)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+# Contributing to Bare-Arduino-Project
 
 Community made patches, localizations, bug reports, documentation and contributions are always welcome and are crucial to the success of this project.
 
@@ -8,7 +19,7 @@ When contributing please ensure you follow the guidelines below so that we can k
 
 Submit a ticket for your issue, assuming one does not already exist.
 
-*	Raise it on our [Issue Tracker](https://github.com/weareleka/moti/issues)
+*	Raise it on our [Issue Tracker](https://github.com/weareleka/bare-arduino-project/issues)
 *	Clearly describe the issue including steps to reproduce the bug.
 *	Make sure you fill in the earliest version that you know has the issue as well as the following
     *	Your operating system (Mac, Linux/Unix, Windows)
