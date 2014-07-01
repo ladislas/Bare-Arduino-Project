@@ -1,0 +1,49 @@
+{
+	"folders":
+		[
+			{
+				"path": "/Users/Ladislas/dev/leka/Bare-Arduino-Project"
+			}
+		],
+
+	"settings":
+		{
+			"add_language_option": true,
+			"additional_language_options":
+			{
+				"c": [],
+				"c++": []
+			},
+
+			"inhibit_sublime_completions": true,
+			"sublimeclang_enable_fast_completions": true,
+
+			"sublimeclang_options":
+			[
+				// Base options
+				"-std=c++11",
+				"-mmcu=atmega2560",
+				"-DF_CPU=16000000L",
+				"-MMD -DUSB_VID=null",
+				"-DUSB_PID=null",
+				"-DARDUINO=105",
+				"-D__AVR__",
+				"-D__AVR_ATmega2560__",
+
+				// Flags
+				// "-pedantic",
+				"-Wall",
+				"-Wextra",
+				"-ferror-limit=0",
+				"-Wno-unknown-warning-option",
+				"-Wno-unused-function",
+				"-Wno-unused-variable",
+				"-Wno-attributes",
+
+				// Libs - uses wild cards for simplicity
+				"-I${folder:${project_path:moti.sublime-project}}/lib/**",
+				"-I/usr/local/Cellar/avr-libc/**",
+				"-I/Applications/Arduino.app/**"
+			]
+		}
+}
