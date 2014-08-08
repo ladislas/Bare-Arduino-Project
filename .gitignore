@@ -1,0 +1,8 @@
+.DS_Store
+bin/*/
+*build-*
+*~
+build-tmp/
+Makefile
+doc/
+debug.txt
