@@ -74,6 +74,8 @@ The [`.ycm_extra_conf.py`](./.ycm_extra_conf.py) contains everything to be up an
 
 To make sure everything is always formatted as you like, you can customize the [`.editorconfig`](./.editorconfig) file to suit your needs.
 
+Please refer to the [official Editorconfig documentation](http://editorconfig.org/) for more details and to download the plugins needed.
+
 ## Contributing
 
 Help is always more than welcome. If you want to take part in this project, please, make sure you read our [Contributing guidelines](./CONTRIBUTING.md).
