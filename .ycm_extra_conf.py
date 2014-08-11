@@ -1,6 +1,8 @@
 import os
 import ycm_core
 
+libDir = "./lib"
+
 flags = [
 
 '-Wall'
@@ -12,7 +14,7 @@ flags = [
 ,'-x'
 ,'c++'
 
-# Add Libraries here
+# You can add custom libraries here, but note that the script will automatically scan the 'lib' directory.
 ,'-I./lib/MyFirstLib'
 
 # Add avr-libc and Arduino libs, custimize to your needs
@@ -44,13 +46,19 @@ SOURCE_EXTENSIONS = [ '.cpp', '.cxx', '.cc', '.c', '.ino', '.m', '.mm' ]
 def DirectoryOfThisScript():
   return os.path.dirname( os.path.abspath( __file__ ) )
 
-
 def MakeRelativePathsInFlagsAbsolute( flags, working_directory ):
   if not working_directory:
     return list( flags )
+
   new_flags = []
   make_next_absolute = False
   path_flags = [ '-isystem', '-I', '-iquote', '--sysroot=' ]
+
+  for path, dirs, files in os.walk(libDir):
+    for d in dirs:
+      flag = '-I' + os.path.join(path, d)
+      flags.append(flag)
+
   for flag in flags:
     new_flag = flag
 
