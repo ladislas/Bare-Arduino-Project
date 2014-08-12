@@ -61,13 +61,10 @@ We've made a [Homebrew](http://brew.sh/) `formula` that you can `tap` like [*dat
 ```Bash
 $ brew tap WeAreLeka/avr
 $ brew install avr-libc
-```
-
-Check that everything has been installed properly by running `avr-gcc -v` and `avrdude -v`. If `avrdude` is missing, install it with:
-
-```Bash
 $ brew install avrdude
 ```
+
+Check that everything has been installed properly by running `avr-gcc -v` and `avrdude -v`.
 
 #### Linux
 
@@ -92,12 +89,12 @@ $ cd path/to/MyAwesomeProject
 $ git submodule update --init --recursive
 ```
 
-Create a Github repository and push to it:
+[Create a Github repository](https://github.com/new) and push to it:
 
 ```Bash
 $ cd path/to/MyAwesomeProject
 $ git remote set-url origin https://github.com/{{YOUR GITHUB USERNAME}}/MyAwesomeProject
-$ git push origin master
+$ git push --set-upstream origin master
 ```
 
 ### 3. Install `pySerial`
@@ -118,7 +115,7 @@ $ pip install pyserial
 
 ### 4. Test that evrything is up and running
 
-To make sure you're up and running to hack autism, we are going to compile some code.
+To make sure you're up and running to hack Arduino, we are going to compile some code.
 
 First `cd` to `src/myProject` folder:
 
