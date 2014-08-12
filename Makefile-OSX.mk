@@ -19,6 +19,10 @@ ARDUINO_DIR       = /Applications/Arduino.app/Contents/Resources/Java
 ### Path to where the your project's libraries are stored.
 USER_LIB_PATH     :=  $(PROJECT_DIR)/lib
 
+### AVR_GCC_VERSION
+### Check if the version is equal or higher than 4.9
+AVR_GCC_VERSION  := $(shell expr `avr-gcc -dumpversion | cut -f1` \>= 4.9)
+
 ### BOARD_TAG
 ### It must be set to the board you are currently using. (i.e uno, mega2560, etc.)
 BOARD_TAG         = uno
@@ -37,10 +41,14 @@ AVRDDUDE          = /usr/local/bin/avrdude
 
 ### CPPFLAGS
 ### Flags you might want to set for debugging purpose. Comment to stop.
-CPPFLAGS         = -pedantic -Wall -Wextra
+CPPFLAGS         = -std=gnu++11 -pedantic -Wall -Wextra
+### If avr-gcc -v is higher than 4.9, activate coloring of the output
+ifeq "$(AVR_GCC_VERSION)" "1"
+    CPPFLAGS += -fdiagnostics-color
+endif
 
 ### CFLAGS_STD
-CFLAGS_STD = -std=c++11
+CFLAGS = -std=gnu11
 
 ### MONITOR_PORT
 ### The port your board is connected to. Using an '*' tries all the ports and finds the right one.
