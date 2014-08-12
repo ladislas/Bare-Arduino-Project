@@ -17,24 +17,32 @@
 
 ## About
 
-Ever wanted to start a new [Arduino](http://arduino.cc/) project...
+Ever wanted to start a new [Arduino](http://arduino.cc/) project and...
 
-*	**without** using the terrible *Arduino IDE*?
-*	**to be able to** organize your `directory tree` as you like?
-*	**to be able to** put all your libraries in `libs`, your sources in `src`, your tests in `test` and your binaries in `bin`?
-*	**to be able to** use `C++11` and `avr-gcc -v 4.8`?
+*	**not use** the *terrible* Arduino IDE?
+*	**use** your **favorite text editor?**
+*	**have** decent **code completion** and **syntax checking**?
+*	**organize** your `directory tree` **as you like?**
+	*	libraries in `lib`
+	*	sources in `src`
+	*	tests in `tests`
+	*	binaries in `bin`
+*	**use** a newer version of `avr-gcc` such as `4.8.2` or `4.9.1`?
+*	**use** an awesome [`Makefile`](https://github.com/sudar/Arduino-Makefile) to compile and upload your code?
 
 If you answered **yes** to one of the above, this [Bare Arduino Project](https://github.com/weareleka/arduino-project) is just what you're looking for! :)
 
+## What you get
+
 Based on what we've learned on our [Moti project](http://github.com/weareleka/moti), this repo will allow you to:
 
-*	move away from the Arduino IDE
+*	move away from the Arduino IDE and use your favorite text editor such as Vim or SublimeText
+*	get up and running in less time
+*	use `avr-gcc 4.8 or 4.9` to compile your code
 *	use `C++11` for your standard coding
-*	use `avr-gcc 4.8` to compile your code
 *	use `make` to compile, `make upload` to upload, thanks to [Sudar](https://github.com/sudar/)'s incredible project [Arduino-Makefile](https://github.com/sudar/Arduino-Makefile)
-*	use your favorite text editor to write your code
 
-To put it in a nuttshell, it allows you to **write Arduino code, as you would write anything else !**
+To put it in a nuttshell, it allows you to **write Arduino code as you ever wanted !**
 
 ## How to install and use
 
@@ -62,9 +70,9 @@ The [`bare-arduino.sublime-project`](./bare-arduino.sublime-project) contains al
 
 ### Vim - YouCompleteMe
 
-Vim is our default text editor and we use [Valloric](https://github.com/Valloric) incredible vim plugin, [YouCompleteMe](https://github.com/Valloric) for errors and code completion.
+Vim is our default text editor and we use the incredible vim plugin [YouCompleteMe](https://github.com/Valloric) for syntax checking and code completion.
 
-As Valloric puts it:
+As [Valloric](https://github.com/Valloric) puts it:
 
 > YouCompleteMe is a fast, as-you-type, fuzzy-search code completion engine for Vim. It has several completion engines: an identifier-based engine that works with every programming language, a semantic, Clang-based engine that provides native semantic code completion for C/C++/Objective-C/Objective-C++ (from now on referred to as "the C-family languages"), a Jedi-based completion engine for Python, an OmniSharp-based completion engine for C# and an omnifunc-based completer that uses data from Vim's omnicomplete system to provide semantic completions for many other languages (Ruby, PHP etc.).
 
