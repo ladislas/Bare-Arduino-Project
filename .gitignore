@@ -6,3 +6,4 @@ build-tmp/
 Makefile
 doc/
 debug.txt
+.ycm_extra_conf.pyc
