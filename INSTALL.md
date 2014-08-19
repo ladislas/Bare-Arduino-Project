@@ -7,6 +7,7 @@
 
 - [About](#about)
 - [Installation Guide](#installation-guide)
+	- [Important note about bugs and issues](#important-note-about-bugs-and-issues)
 	- [Toolbox](#toolbox)
 		- [OS X](#os-x)
 		- [Linux](#linux)
@@ -23,15 +24,21 @@
 
 You will be guided during the installation and setup of our toolchain.
 
-The toolchain gathers all the pieces of software you need to successfully write, compile, debug, recompile and upload your code to our Arduino based Moti.
+The toolchain gathers all the pieces of software you need to successfully write, compile, debug, recompile and upload the code of your Arduino projects.
 
 It took us quite some time to figure out what to do, how to do it, which Homebrew `formula` to install, how to use the `Makefile` and so on. When we say quite some time, you can count full working weeks of reading, trying, trying again, cursing because nothing is working, dead ends, new ideas, clearer vision and finally a working toolchain.
 
->It's our present to the world!
+> It's our present to the world!
 
 Have fun! :)
 
 ## Installation Guide
+
+### Important note about bugs and issues
+
+If during or after the installation process, something **does not** work with the [Bare-Arduino-Project](https://github.com/WeAreLeka/bare-arduino-project), please **first report the issue [here** in this repo issue tracker](https://github.com/WeAreLeka/bare-arduino-project/issues) and **not in Arduino-Makefile**. 
+
+It will allow us to investigate first and not overflow the Arduino-Makefile issue tracker. 
 
 ### Toolbox
 
