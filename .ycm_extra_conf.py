@@ -1,7 +1,7 @@
 import os
 import ycm_core
 
-libDir = "./lib"
+libDir = "lib"
 
 flags = [
 
