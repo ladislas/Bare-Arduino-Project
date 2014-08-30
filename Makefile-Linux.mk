@@ -33,7 +33,7 @@ MONITOR_BAUDRATE  = 115200
 
 ### AVR_TOOLS_DIR
 ### Path to the AVR tools directory such as avr-gcc, avr-g++, etc.
-AVR_TOOLS_DIR     = /usr/bin
+AVR_TOOLS_DIR     = /usr
 
 ### AVRDDUDE
 ### Path to avrdude directory.
