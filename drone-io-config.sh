@@ -17,13 +17,13 @@ cd Arduino-Makefile
 git checkout auto-lib
 cd ..
 
-echo "Test MyFirstProject..."
-cd src/mySecondProject
+echo "Test myFirstProject..."
+cd src/myFirstProject
 git clone https://gist.github.com/ladislas/230f38359c3526fba944 ./tmp
 cp ./tmp/Makefile ./
 make
 
-echo "Test MySecondProject..."
+echo "Test mySecondProject..."
 cd ../mySecondProject
 git clone https://gist.github.com/ladislas/230f38359c3526fba944 ./tmp
 cp ./tmp/Makefile ./
