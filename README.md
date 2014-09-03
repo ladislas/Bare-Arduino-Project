@@ -1,4 +1,4 @@
-[ ![Codeship Status for WeAreLeka/Bare-Arduino-Project](https://codeship.io/projects/ea313310-14cc-0132-6875-2a589eaadb79/status)](https://codeship.io/projects/33518)
+[![Build Status](https://drone.io/github.com/WeAreLeka/Bare-Arduino-Project/status.png)](https://drone.io/github.com/WeAreLeka/Bare-Arduino-Project/latest)
 
 # Bare Arduino Project
 
