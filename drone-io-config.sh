@@ -29,6 +29,8 @@ for dir in *; do
 		cd $dir
 		cp $CWD/Makefile-Drone.mk Makefile
 		make
+		echo "Building ${dir} passed with success!"
+		cd ..
 	fi
 done
 
