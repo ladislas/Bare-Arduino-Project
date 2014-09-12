@@ -1,4 +1,6 @@
 language: c
 compiler:
   - gcc
+before_script:
+	- chmod +x drone-io-config.sh
 script: ./drone-io-config.sh
