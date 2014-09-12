@@ -1,1 +1,4 @@
-script: drone-io-config.sh
+language: c
+compiler:
+  - gcc
+script: ./drone-io-config.sh

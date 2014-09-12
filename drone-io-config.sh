@@ -1,10 +1,15 @@
 # INSTRUCTIONS: copy and past the following inside your drone.io project setting.
 
 # Environnement variables - must be copied in the reserved space
-CWD=/home/ubuntu/src/github.com/WeAreLeka/Bare-Arduino-Project
-SRC=/home/ubuntu/src/github.com/WeAreLeka/Bare-Arduino-Project/src
-TEST=/home/ubuntu/src/github.com/WeAreLeka/Bare-Arduino-Project/test
-ARDMK=/home/ubuntu/src/github.com/WeAreLeka/Bare-Arduino-Project/Arduino-Makefile
+# CWD=/home/ubuntu/src/github.com/WeAreLeka/Bare-Arduino-Project
+# SRC=/home/ubuntu/src/github.com/WeAreLeka/Bare-Arduino-Project/src
+# TEST=/home/ubuntu/src/github.com/WeAreLeka/Bare-Arduino-Project/test
+# ARDMK=/home/ubuntu/src/github.com/WeAreLeka/Bare-Arduino-Project/Arduino-Makefile
+
+CWD=pwd
+SRC=$CWD/src
+TEST=$CWD/test
+ARDMK=$CWD/Arduino-Makefile
 
 # Commands - must be copied in the reserved space
 echo "Install avr-gcc..."
