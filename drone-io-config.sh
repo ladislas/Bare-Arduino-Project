@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # INSTRUCTIONS: copy and past the following inside your drone.io project setting.
 
 # Environnement variables - must be copied in the reserved space
@@ -11,16 +13,21 @@ SRC=$CWD/src
 TEST=$CWD/test
 ARDMK=$CWD/Arduino-Makefile
 
+SUDO_CMD=
+if command -v sudo >/dev/null 2>&1; then
+	SUDO_CMD="sudo -E"
+fi
+
 # Commands - must be copied in the reserved space
 echo "Install avr-gcc..."
 wget --quiet  http://downloads.arduino.cc/arduino-1.5.7-linux32.tgz
 tar -xf arduino-1.5.7-linux32.tgz
-sudo mv arduino-1.5.7/hardware/tools/avr /usr/local/share/avr-gcc
+$SUDO_CMD mv arduino-1.5.7/hardware/tools/avr /usr/local/share/avr-gcc
 
 echo "Install Arduino IDE..."
 wget --quiet  http://arduino.googlecode.com/files/arduino-1.0.5-linux32.tgz
 tar -xf arduino-1.0.5-linux32.tgz
-sudo mv arduino-1.0.5/ /usr/local/share/arduino
+$SUDO_CMD mv arduino-1.0.5/ /usr/local/share/arduino
 
 echo "Cloning Arduino-Makefie and activate auto-lib..."
 git submodule init && git submodule update
