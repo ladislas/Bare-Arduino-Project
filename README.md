@@ -45,6 +45,7 @@ Based on what we've learned on our [Moti project](http://github.com/weareleka/mo
 *	use `avr-gcc 4.8 or 4.9` to compile your code
 *	use `C++11` for your standard coding
 *	use `make` to compile, `make upload` to upload, thanks to [Sudar](https://github.com/sudar/)'s incredible project [Arduino-Makefile](https://github.com/sudar/Arduino-Makefile)
+*	use our [Travis-CI](https://travis-ci.org) continuous integration configuration and adapt it to suit your needs
 
 To put it in a nuttshell, it allows you to **write Arduino code as you ever wanted !**
 
