@@ -24,4 +24,4 @@ sudo mv "$AVR_GCC_BASENAME/hardware/tools/avr" "/usr/local/share/avr-gcc"
 
 echo "Installtion of dependencies is complete, we are now going to run some tests..."
 
-/usr/local/share/avr-gcc/avr-gcc -v
+ls -la "/usr/local/share/avr-gcc/"
