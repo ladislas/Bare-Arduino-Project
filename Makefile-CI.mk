@@ -5,7 +5,7 @@
 
 ### PROJECT_DIR
 ### This is the path to where you have created/cloned your project
-PROJECT_DIR       = /home/ubuntu/src/github.com/WeAreLeka/Bare-Arduino-Project
+PROJECT_DIR       =
 
 ### AVR_GCC_VERSION
 ### Check if the version is equal or higher than 4.9
@@ -17,11 +17,11 @@ ARDMK_DIR         = $(PROJECT_DIR)/Arduino-Makefile
 
 ### ARDUINO_DIR
 ### Path to the Arduino application and ressources directory.
-ARDUINO_DIR       = /usr/local/share/arduino
+ARDUINO_DIR       =
 
 ### USER_LIB_PATH
 ### Path to where the your project's libraries are stored.
-USER_LIB_PATH     :=  $(PROJECT_DIR)/lib
+USER_LIB_PATH     := $(PROJECT_DIR)/lib
 
 ### BOARD_TAG
 ### It must be set to the board you are currently using. (i.e uno, mega2560, etc.)
@@ -33,7 +33,7 @@ MONITOR_BAUDRATE  = 115200
 
 ### AVR_TOOLS_DIR
 ### Path to the AVR tools directory such as avr-gcc, avr-g++, etc.
-AVR_TOOLS_DIR     = /usr/local/share/avr-gcc
+AVR_TOOLS_DIR     =
 
 ### AVRDDUDE
 ### Path to avrdude directory.

@@ -1,5 +1,4 @@
 language: c
 compiler:
   - gcc
-before_install: script/bootstrap.sh
-script: script/runtests.sh
+script: script/bootstrap.sh

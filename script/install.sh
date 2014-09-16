@@ -14,15 +14,14 @@ echo "Installing Arduino 1.0.5..."
 
 wget "$ARDUINO_URL"
 tar -xzf "$ARDUINO_FILE"
-sudo mv "$ARDUINO_BASENAME/" "/usr/local/share/arduino"
+sudo mv "$ARDUINO_BASENAME/" "$ARDUINO"
 
 echo "Installing avr-gcc from Arduino 1.5.7..."
 
 wget "$AVR_GCC_URL"
 tar -xzf "$AVR_GCC_FILE"
-sudo mv "$AVR_GCC_BASENAME/hardware/tools/avr" "/usr/local/share/avr-gcc"
+sudo mv "$AVR_GCC_BASENAME/hardware/tools/avr" "$AVR_GCC"
 
 echo "Installtion of dependencies is complete, we are now going to run some tests..."
 
-ls -la "/usr/local/share/avr-gcc/"
-/usr/local/share/avr-gcc/bin/avr-gcc -v
+source "$SCRIPTS_DIR/runtests.sh"

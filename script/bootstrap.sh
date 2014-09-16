@@ -1,7 +1,13 @@
 #!/usr/bin/env bash
 
-SCRIPTS_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+SCRIPTS_DIR=$(dirname -- $(readlink -fn -- "$0"))
 
-echo $SCRIPTS_DIR
+CWD=$(realpath "$SCRIPTS_DIR/..")
+SRC="$CWD/src"
+TEST="$CWD/test"
+ARDMK="$CWD/Arduino-Makefile"
 
-source $SCRIPTS_DIR/install.sh
+AVR_GCC="/usr/local/share/avr-gcc"
+ARDUINO="/usr/local/share/arduino"
+
+source "$SCRIPTS_DIR/install.sh"
