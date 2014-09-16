@@ -1,6 +1,5 @@
 language: c
 compiler:
   - gcc
-before_script:
-	- chmod +x drone-io-config.sh
-script: ./drone-io-config.sh
+before_install: script/bootstrap.sh
+script: script/runtests.sh
