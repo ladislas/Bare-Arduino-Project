@@ -12,13 +12,13 @@ AVR_GCC_URL="http://downloads.arduino.cc/$AVR_GCC_FILE"
 
 echo "Installing Arduino 1.0.5...\n"
 
-wget "$ARDUINO_URL"
+wget -q "$ARDUINO_URL"
 tar -xzf "$ARDUINO_FILE"
 sudo mv "$ARDUINO_BASENAME/" "$ARDUINO"
 
 echo "Installing avr-gcc from Arduino 1.5.7..."
 
-wget "$AVR_GCC_URL"
+wget -q "$AVR_GCC_URL"
 tar -xzf "$AVR_GCC_FILE"
 sudo mv "$AVR_GCC_BASENAME/hardware/tools/avr" "$AVR_GCC"
 

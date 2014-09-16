@@ -15,7 +15,7 @@ for dir in *; do
 		cp $CWD/Makefile-CI.mk Makefile
 
 		make clean
-		make PROJECT_DIR=$CWD ARDUINO_DIR=$ARDUINO AVR_TOOLS_DIR=$AVR_GCC
+		make "PROJECT_DIR=$CWD ARDUINO_DIR=$ARDUINO AVR_TOOLS_DIR=$AVR_GCC"
 
 		if [[ $? -ne 0 ]]; then
 			failures+=("$dir")
@@ -40,7 +40,7 @@ for dir in *; do
 		cp $CWD/Makefile-CI.mk Makefile
 
 		make clean
-		make PROJECT_DIR=$CWD ARDUINO_DIR=$ARDUINO AVR_TOOLS_DIR=$AVR_GCC
+		make "PROJECT_DIR=$CWD ARDUINO_DIR=$ARDUINO AVR_TOOLS_DIR=$AVR_GCC"
 
 		if [[ $? -ne 0 ]]; then
 			failures+=("$dir")
