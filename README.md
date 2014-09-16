@@ -1,4 +1,4 @@
-[![Build Status](https://drone.io/github.com/WeAreLeka/Bare-Arduino-Project/status.png)](https://drone.io/github.com/WeAreLeka/Bare-Arduino-Project/latest)
+[![Build Status](https://travis-ci.org/WeAreLeka/Bare-Arduino-Project.svg?branch=master)](https://travis-ci.org/WeAreLeka/Bare-Arduino-Project)
 
 # Bare Arduino Project
 
