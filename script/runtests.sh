@@ -1,61 +1,67 @@
 #!/usr/bin/env bash
 
-#!/usr/bin/env bash
-
 failures=()
 
-for dir in "$SRC/*/"
-do
-	dir=${dir%*/}
-	src=${dir##*/}
+cd "$SRC"
+for dir in *; do
 
-	pushd $dir
+	if [ -d "${dir}" ]; then
 
-	echo "Compiling $src..."
+		echo "Compiling $dir...\n"
 
-	cp $CWD/Makefile-CI.mk Makefile
+		echo $CWD
+		cd $dir
 
-	make_output=`make clean`
-	make_output=`make PROJECT_DIR=$CWD ARDUINO_DIR=$ARDUINO AVR_TOOLS_DIR=$AVR_GCC`
+		cp $CWD/Makefile-CI.mk Makefile
 
-	if [[ $? -ne 0 ]]; then
-		failures+=("$src")
-		echo "Example $src failed"
+		make clean
+		make PROJECT_DIR=$CWD ARDUINO_DIR=$ARDUINO AVR_TOOLS_DIR=$AVR_GCC
+
+		if [[ $? -ne 0 ]]; then
+			failures+=("$dir")
+			echo "Source $dir failed"
+		fi
+
+		cd ..
+
 	fi
 
-	popd
-
 done
 
-for dir in "$TEST/*/"
-do
-	dir=${dir%*/}
-	test=${dir##*/}
+cd "$TEST"
+for dir in *; do
 
-	pushd $dir
+	if [ -d "${dir}" ]; then
 
-	echo "Compiling $test..."
+		echo "Compiling $dir...\n"
 
-	cp $CWD/Makefile-CI.mk Makefile
+		cd $dir
 
-	make_output=`make clean`
-	make_output=`make PROJECT_DIR=$CWD ARDUINO_DIR=$ARDUINO AVR_TOOLS_DIR=$AVR_GCC`
+		cp $CWD/Makefile-CI.mk Makefile
 
-	if [[ $? -ne 0 ]]; then
-		failures+=("$test")
-		echo "Example $test failed"
+		make clean
+		make PROJECT_DIR=$CWD ARDUINO_DIR=$ARDUINO AVR_TOOLS_DIR=$AVR_GCC
+
+		if [[ $? -ne 0 ]]; then
+			failures+=("$dir")
+			echo "Test $dir failed"
+		fi
+
+		cd ..
+
 	fi
 
-	popd
-
 done
 
-for failure in "${failures[@]}"; do
-	echo "Example $failure failed"
-done
+if [[ ${#failures[@]} -ne 0 ]]; then
+	echo "\nThe following builds failed:"
+	for failure in "${failures[@]}"; do
+		echo "- Building $failure failed"
+	done
+fi
 
 if [[ ${#failures[@]} -eq 0 ]]; then
-	echo "All tests passed."
+	echo "\nAll tests passed."
 else
 	exit 1
 fi
