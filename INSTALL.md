@@ -68,7 +68,7 @@ $ sudo apt-get install git arduino
 We've made a [Homebrew](http://brew.sh/) `formula` that you can `tap` like [*dat ass*](https://www.youtube.com/watch?v=18gp_NBg43c):
 
 ```Bash
-$ brew tap WeAreLeka/avr
+$ brew tap WeAreLeka/homebrew-avr
 $ brew install avr-libc
 $ brew install avrdude
 ```
