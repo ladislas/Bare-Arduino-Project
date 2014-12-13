@@ -4,33 +4,48 @@ import ycm_core
 libDir = "lib"
 
 flags = [
+  # General flags
+  '-Wall'
+  ,'-Wextra'
+  ,'-Werror'
 
-'-Wall'
-,'-Wextra'
-,'-Werror'
-,'-Wno-attributes'
+  ,'-Wno-attributes'
+  ,'-std=c++11'
+  ,'-x'
+  ,'c++'
 
-,'-std=c++11'
-,'-x'
-,'c++'
+  # avr-libc flags for 1.8.0 and 1.8.1 installed with homebrew
+  # you can deleted the one you don't need
+  ,'-isystem/usr/local/Cellar/avr-libc/1.8.0/avr/include'
+  ,'-isystem/usr/local/Cellar/avr-libc/1.8.1/avr/include'
 
-# You can add custom libraries here, but note that the script will automatically scan the 'lib' directory.
-,'-I./lib/MyFirstLib'
+  # arduino libs flags when downloaded from the arduino website
+  ,'-I/Applications/Arduino.app/Contents/Resources/Java/hardware/arduino/cores/arduino'
+  ,'-I/Applications/Arduino.app/Contents/Resources/Java/hardware/arduino/variants/mega'
+  ,'-I/Applications/Arduino.app/Contents/Resources/Java/libraries'
 
-# Add avr-libc and Arduino libs, custimize to your needs
-,'-isystem/usr/local/Cellar/avr-libc/1.8.0/avr/include'
-,'-isystem/Applications/Arduino.app/Contents/Resources/Java/hardware/arduino/cores/arduino'
-,'-isystem/Applications/Arduino.app/Contents/Resources/Java/hardware/arduino/variants/mega'
-,'-I/Applications/Arduino.app/Contents/Resources/Java/libraries/Wire'
+  # arduino libs flags when installed with brew cask
+  # beware, the version number can change
+  ,'-I/opt/homebrew-cask/Caskroom/arduino/1.0.6/Arduino.app/Contents/Resources/Java/hardware/arduino/cores/arduino'
+  ,'-I/opt/homebrew-cask/Caskroom/arduino/1.0.6/Arduino.app/Contents/Resources/Java/hardware/arduino/variants/mega'
+  ,'-I/opt/homebrew-cask/Caskroom/arduino/1.0.6/Arduino.app/Contents/Resources/Java/libraries'
 
-# Customize microcontroler and Arduino version
-,'-mmcu=atmega2560'
-,'-DF_CPU=16000000L'
-,'-DARDUINO=105'
-,'-D__AVR__'
-,'-D__AVR_ATmega2560__'
-#,'-MMD -DUSB_VID=null'
-#,'-DUSB_PID=null'
+  # for specific arduino libraries such as Wire.h, you need to add them by hand
+  ,'-I/Applications/Arduino.app/Contents/Resources/Java/libraries/Wire'
+  ,'-I/opt/homebrew-cask/Caskroom/arduino/1.0.6/Arduino.app/Contents/Resources/Java/libraries/Wire'
+
+  # You can add custom libraries here, but note that the script will automatically scan the 'lib' directory.
+  ,'-I./lib/MyFirstLib'
+
+  # Customize microcontroler and Arduino version
+  ,'-mmcu=atmega2560'
+  ,'-DF_CPU=16000000L'
+  ,'-DARDUINO=105'
+  ,'-D__AVR__'
+  ,'-D__AVR_ATmega2560__'
+
+  # ,'-MMD -DUSB_VID=null'
+  # ,'-DUSB_PID=null'
 ]
 
 
