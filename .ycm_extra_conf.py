@@ -1,7 +1,11 @@
 import os
 import ycm_core
 
-libDir = "lib"
+# You can set a directory with a lot of libraries to be search recursively here
+ArduinoLibDir = "/Applications/Arduino.app/Contents/Resources/Java/libraries"
+
+# This is the list of all directories to search for header files
+libDirs = [ArduinoLibDir, "lib"]
 
 flags = [
   # General flags
@@ -14,25 +18,19 @@ flags = [
   ,'-x'
   ,'c++'
 
-  # avr-libc flags for 1.8.0 and 1.8.1 installed with homebrew
-  # you can deleted the one you don't need
+  # Avr-libc flags for 1.8.0 and 1.8.1 installed with homebrew
+  # You can deleted the one you don't need
   ,'-isystem/usr/local/Cellar/avr-libc/1.8.0/avr/include'
   ,'-isystem/usr/local/Cellar/avr-libc/1.8.1/avr/include'
 
-  # arduino libs flags when downloaded from the arduino website
+  # Arduino libs flags when downloaded from the arduino website
   ,'-I/Applications/Arduino.app/Contents/Resources/Java/hardware/arduino/cores/arduino'
   ,'-I/Applications/Arduino.app/Contents/Resources/Java/hardware/arduino/variants/mega'
-  ,'-I/Applications/Arduino.app/Contents/Resources/Java/libraries'
 
-  # arduino libs flags when installed with brew cask
-  # beware, the version number can change
+  # Arduino libs flags when installed with brew cask or if the path is not the regular one
+  # Beware, the version number can change
   ,'-I/opt/homebrew-cask/Caskroom/arduino/1.0.6/Arduino.app/Contents/Resources/Java/hardware/arduino/cores/arduino'
   ,'-I/opt/homebrew-cask/Caskroom/arduino/1.0.6/Arduino.app/Contents/Resources/Java/hardware/arduino/variants/mega'
-  ,'-I/opt/homebrew-cask/Caskroom/arduino/1.0.6/Arduino.app/Contents/Resources/Java/libraries'
-
-  # for specific arduino libraries such as Wire.h, you need to add them by hand
-  ,'-I/Applications/Arduino.app/Contents/Resources/Java/libraries/Wire'
-  ,'-I/opt/homebrew-cask/Caskroom/arduino/1.0.6/Arduino.app/Contents/Resources/Java/libraries/Wire'
 
   # You can add custom libraries here, but note that the script will automatically scan the 'lib' directory.
   ,'-I./lib/MyFirstLib'
@@ -69,10 +67,11 @@ def MakeRelativePathsInFlagsAbsolute( flags, working_directory ):
   make_next_absolute = False
   path_flags = [ '-isystem', '-I', '-iquote', '--sysroot=' ]
 
-  for path, dirs, files in os.walk(libDir):
-    for d in dirs:
-      flag = '-I' + os.path.join(path, d)
-      flags.append(flag)
+  for libDir in libDirs:
+    for path, dirs, files in os.walk(libDir):
+      for d in dirs:
+        flag = '-I' + os.path.join(path, d)
+        flags.append(flag)
 
   for flag in flags:
     new_flag = flag
