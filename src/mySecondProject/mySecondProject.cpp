@@ -1,5 +1,4 @@
 #include <Arduino.h>
-// #include "MyFirstLib.h"
 #include "MySecondLib.h"
 
 MySecondClass MySecondObject;
