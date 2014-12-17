@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/WeAreLeka/Bare-Arduino-Project.svg?branch=master)](https://travis-ci.org/WeAreLeka/Bare-Arduino-Project)
+[![Build Status](https://travis-ci.org/ladislas/Bare-Arduino-Project.svg?branch=master)](https://travis-ci.org/ladislas/Bare-Arduino-Project)
 
 # Bare Arduino Project
 
