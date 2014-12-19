@@ -55,7 +55,7 @@ The full procedure is detailed in [INSTALL.md](./INSTALL.md).
 
 ## Bugs
 
-If you encounter some issues while using the [Bare-Arduino-Project](https://github.com/WeAreLeka/bare-arduino-project), please first report the issue [here in this repo issue tracker](https://github.com/WeAreLeka/bare-arduino-project/issues) and **not in Arduino-Makefile**. 
+If you encounter some issues while using the [Bare-Arduino-Project](https://github.com/ladislas/bare-arduino-project), please first report the issue [here in this repo issue tracker](https://github.com/ladislas/bare-arduino-project/issues) and **not in Arduino-Makefile**. 
 
 It will allow us to investigate first and not overflow the Arduino-Makefile issue tracker. 
 
