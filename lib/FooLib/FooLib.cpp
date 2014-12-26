@@ -1,24 +1,24 @@
 #include <Arduino.h>
-#include "MyFirstLib.h"
+#include "FooLib.h"
 
 /**
- * @file MyFirstLib.cpp
+ * @file FooLib.cpp
  * @author Ladislas de Toldi
  * @version 1.0
  */
 
-MyFirstClass::MyFirstClass() {
+FooClass::FooClass() {
 	// initialize variables
 	_variableOne = 2;
 	_variableTwo = 3;
 }
 
-void MyFirstClass::methodNumberOne() const {
+void FooClass::firstFooMethod() const {
 	// print variable one
 	Serial.println(_variableOne);
 }
 
-void MyFirstClass::methodNumberTwo() const {
+void FooClass::secondFooMethod() const {
 	// print variable one
 	Serial.println(_variableTwo);
 }

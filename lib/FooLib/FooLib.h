@@ -1,22 +1,22 @@
-#ifndef _MY_AWESOME_PROJECT_FIRST_LIB_
-#define _MY_AWESOME_PROJECT_FIRST_LIB_
+#ifndef _MY_AWESOME_PROJECT_FOO_LIB_
+#define _MY_AWESOME_PROJECT_FOO_LIB_
 
 /**
- * @file MyFirstLib.h
+ * @file FooLib.h
  * @author John Doe
  * @version 1.0
  */
 
 #include <Arduino.h>
 
-class MyFirstClass {
+class FooClass {
 
 	public:
 
-		MyFirstClass();
+		FooClass();
 
-		void methodNumberOne() const;
-		void methodNumberTwo() const;
+		void firstFooMethod() const;
+		void secondFooMethod() const;
 
 	private:
 
