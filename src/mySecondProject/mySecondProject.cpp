@@ -1,7 +1,7 @@
 #include <Arduino.h>
-#include "MySecondLib.h"
+#include "BarLib.h"
 
-MySecondClass MySecondObject;
+BarClass BarObject;
 
 void setup() {
 
@@ -12,9 +12,9 @@ void setup() {
 
 void loop() {
 
-	MySecondObject.methodCallNumberOne();
+	BarObject.firstBarMethod();
 	delay(1000);
-	MySecondObject.methodCallNumberTwo();
+	BarObject.secondBarMethod();
 	delay(1000);
 
 }
