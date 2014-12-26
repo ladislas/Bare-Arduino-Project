@@ -1,7 +1,7 @@
 #include <Arduino.h>
-#include "MyFirstLib.h"
+#include "FooLib.h"
 
-MyFirstClass MyFirstObject;
+FooClass FooObject;
 
 void setup() {
 
@@ -12,9 +12,9 @@ void setup() {
 
 void loop() {
 
-	MyFirstObject.methodNumberOne();
+	FooObject.firstFooMethod();
 	delay(1000);
-	MyFirstObject.methodNumberTwo();
+	FooObject.secondFooMethod();
 	delay(1000);
 
 }
