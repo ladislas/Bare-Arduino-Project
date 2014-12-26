@@ -1,22 +1,22 @@
 #include <Arduino.h>
-#include "MySecondLib.h"
+#include "BarLib.h"
 
 /**
- * @file MyFirstLib.cpp
+ * @file BarLib.cpp
  * @author Ladislas de Toldi
  * @version 1.0
  */
 
-MySecondClass::MySecondClass() {
+BarClass::BarClass() {
 	// initialize variables
 }
 
-void MySecondClass::methodCallNumberOne() const {
-	// call MyFirstObject methode
-	MyFirstObject.methodNumberOne();
+void BarClass::firstBarMethod() const {
+	// call FooObject methode
+	FooObject.firstFooMethod();
 }
 
-void MySecondClass::methodCallNumberTwo() const {
-	// call MyFirstObject methode
-	MyFirstObject.methodNumberTwo();
+void BarClass::secondBarMethod() const {
+	// call FooObject methode
+	FooObject.secondFooMethod();
 }
