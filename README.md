@@ -24,13 +24,14 @@
 Ever wanted to start a new [Arduino](http://arduino.cc/) project and...
 
 *	**not use** the *terrible* Arduino IDE?
-*	**use** your **favorite text editor?**
+*	**use** your **favorite text editor instead?**
 *	**have** decent **code completion** and **syntax checking**?
 *	**organize** your `directory tree` **as you like?**
 	*	libraries in `lib`
 	*	sources in `src`
-	*	tests in `tests`
+	*	tests in `test`
 	*	binaries in `bin`
+	*	etc.
 *	**use** a newer version of `avr-gcc` such as `4.8.2` or `4.9.1`?
 *	**use** an awesome [`Makefile`](https://github.com/sudar/Arduino-Makefile) to compile and upload your code?
 
