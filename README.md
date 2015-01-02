@@ -33,7 +33,7 @@ Ever wanted to start a new [Arduino](http://arduino.cc/) project and...
 	*	binaries in `bin`
 	*	etc.
 *	**use** a newer version of `avr-gcc` such as `4.8.2` or `4.9.1`?
-*	**use** an awesome [`Makefile`](https://github.com/sudar/Arduino-Makefile) to compile and upload your code?
+*	**use** an awesome [`Makefile`](https://github.com/sudar/Arduino-Makefile) to compile and upload your code from the `cli`?
 
 If you answered **yes** to one of the above, this [Bare Arduino Project](https://github.com/weareleka/arduino-project) is just what you're looking for! :)
 
