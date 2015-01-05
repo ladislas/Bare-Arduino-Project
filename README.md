@@ -11,9 +11,9 @@
 - [How to install and use](#how-to-install-and-use)
 - [Bugs](#bugs)
 - [Text editors](#text-editors)
-	- [Sublime Text - SublimeClang](#sublime-text---sublimeclang)
-	- [Vim - YouCompleteMe](#vim---youcompleteme)
-	- [Bonus - `.editorconfig`](#bonus---editorconfig)
+  - [Sublime Text - SublimeClang](#sublime-text---sublimeclang)
+  - [Vim - YouCompleteMe](#vim---youcompleteme)
+  - [Bonus - `.editorconfig`](#bonus---editorconfig)
 - [Contributing](#contributing)
 - [Copyright and License](#copyright-and-license)
 
