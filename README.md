@@ -82,7 +82,7 @@ As [Valloric](https://github.com/Valloric) puts it:
 
 > YouCompleteMe is a fast, as-you-type, fuzzy-search code completion engine for Vim. It has several completion engines: an identifier-based engine that works with every programming language, a semantic, Clang-based engine that provides native semantic code completion for C/C++/Objective-C/Objective-C++ (from now on referred to as "the C-family languages"), a Jedi-based completion engine for Python, an OmniSharp-based completion engine for C# and an omnifunc-based completer that uses data from Vim's omnicomplete system to provide semantic completions for many other languages (Ruby, PHP etc.).
 
-The [`.ycm_extra_conf.py`](./.ycm_extra_conf.py) contains everything to be up and running. Beware that you really need to customize it for it to work properly. Each library must be added by hand to use auto completion.
+The [`.ycm_extra_conf.py`](./.ycm_extra_conf.py) file contains everything  you need. ~~Beware that you really need to customize it for it to work properly. Each library must be added by hand to use auto completion.~~ It works right out of the box!
 
 ### Bonus - `.editorconfig`
 
