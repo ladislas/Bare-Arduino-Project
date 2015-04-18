@@ -21,11 +21,14 @@ ARDUINO_DIR       = /usr/share/arduino
 
 ### USER_LIB_PATH
 ### Path to where the your project's libraries are stored.
-USER_LIB_PATH     :=  $(PROJECT_DIR)/lib
+USER_LIB_PATH     :=  $(realpath $(PROJECT_DIR)/lib)
 
-### BOARD_TAG
-### It must be set to the board you are currently using. (i.e uno, mega2560, etc.)
-BOARD_TAG         = mega2560
+### BOARD_TAG & BOARD_SUB
+### It must be set to the board you are currently using. (i.e uno, mega, etc.)
+### For the Arduino Uno, only BOARD_TAG is mandatory and BOARD_SUB can be equal to anything
+### For the Arduino Mega2560, BOARD_SUB is also needed
+BOARD_TAG         = mega
+BOARD_SUB         = atmega2560
 
 ### MONITOR_BAUDRATE
 ### It must be set to Serial baudrate value you are using.
@@ -63,7 +66,8 @@ CURRENT_DIR       = $(shell basename $(CURDIR))
 
 ### OBJDIR
 ### This is were you put the binaries you just compile using 'make'
-OBJDIR            = $(PROJECT_DIR)/bin/$(BOARD_TAG)/$(CURRENT_DIR)
+CURRENT_DIR       = $(shell basename $(CURDIR))
+OBJDIR            = $(PROJECT_DIR)/bin/$(CURRENT_DIR)/$(BOARD_TAG)
 
 ### path to Arduino.mk, inside the ARDMK_DIR, don't touch.
 include $(ARDMK_DIR)/Arduino.mk
