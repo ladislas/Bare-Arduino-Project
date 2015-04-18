@@ -15,6 +15,7 @@ FooClass::FooClass() {
 
 void FooClass::firstFooMethod() const {
 	// print variable one
+	Wire.begin();
 	Serial.println(_variableOne);
 }
 
