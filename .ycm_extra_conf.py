@@ -2,7 +2,11 @@ import os
 import ycm_core
 
 # You can set a directory with a lot of libraries to be search recursively here
-ArduinoLibDir = ["/Applications/Arduino.app/Contents/Resources/Java/libraries", "/Applications/Arduino.app/Contents/Java/libraries"]
+ArduinoLibDir = [
+  "/Applications/Arduino.app/Contents/Resources/Java/libraries"
+  ,"/Applications/Arduino.app/Contents/Java/libraries"
+  ,"/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries"
+]
 
 # This is the list of all directories to search for header files
 libDirs = ArduinoLibDir + ["lib"]
@@ -42,7 +46,7 @@ flags = [
   # Customize microcontroler and Arduino version
   ,'-mmcu=atmega2560'
   ,'-DF_CPU=16000000L'
-  ,'-DARDUINO=105'
+  ,'-DARDUINO=163'
   ,'-D__AVR__'
   ,'-D__AVR_ATmega2560__'
 
@@ -97,6 +101,7 @@ def MakeRelativePathsInFlagsAbsolute( flags, working_directory ):
 
     if new_flag:
       new_flags.append( new_flag )
+
   return new_flags
 
 
