@@ -1,4 +1,5 @@
 #include <Arduino.h>
+#include <Wire.h>
 #include "BarLib.h"
 
 BarClass BarObject;

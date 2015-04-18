@@ -1,4 +1,5 @@
 #include <Arduino.h>
+#include <Wire.h>
 #include "FooLib.h"
 
 FooClass FooObject;
@@ -12,6 +13,7 @@ void setup() {
 
 void loop() {
 
+	Serial.println("Hello world");
 	FooObject.firstFooMethod();
 	delay(1000);
 	FooObject.secondFooMethod();

@@ -8,6 +8,7 @@
  */
 
 #include <Arduino.h>
+#include <Wire.h>
 
 class FooClass {
 
