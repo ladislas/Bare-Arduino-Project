@@ -5,7 +5,7 @@
 
 ### PROJECT_DIR
 ### This is the path to where you have created/cloned your project
-PROJECT_DIR       = /home/{{ YOUR USERNAME }}/path/to/MyAwesomeProject
+PROJECT_DIR       = /home/{{ YOUR USERNAME }}/MyArduinoProject
 
 ### AVR_GCC_VERSION
 ### Check if the version is equal or higher than 4.9
@@ -24,9 +24,12 @@ ARDUINO_DIR       = /usr/share/arduino
 USER_LIB_PATH     :=  $(realpath $(PROJECT_DIR)/lib)
 
 ### BOARD_TAG & BOARD_SUB
-### It must be set to the board you are currently using. (i.e uno, mega, etc.)
-### For the Arduino Uno, only BOARD_TAG is mandatory and BOARD_SUB can be equal to anything
-### For the Arduino Mega2560, BOARD_SUB is also needed
+### For Arduino IDE 1.0.x
+### Only BOARD_TAG is needed. It must be set to the board you are currently using. (i.e uno, mega2560, etc.)
+# BOARD_TAG         = mega2560
+### For Arduino IDE 1.6.x
+### Both BOARD_TAG and BOARD_SUB are needed. They must be set to the board you are currently using. (i.e BOARD_TAG = uno, mega, etc. & BOARD_SUB = atmega2560, etc.)
+### Note: for the Arduino Uno, only BOARD_TAG is mandatory and BOARD_SUB can be equal to anything
 BOARD_TAG         = mega
 BOARD_SUB         = atmega2560
 
