@@ -46,11 +46,9 @@ It will allow us to investigate first and not overflow the Arduino-Makefile issu
 
 Before starting, please make sure you have those installed:
 
-*	[Arduino IDE 1.0.x](http://arduino.cc/en/main/software#toc2) - Download the app from the website
+*	[Arduino IDE 1.0.x or 1.6.x](http://arduino.cc/en/main/software#toc2) - Download the app from the website
 *	[Homebrew](http://mxcl.github.io/homebrew/) - Follow the instructions on their website
 *	[Git](http://git-scm.com/) - use `brew install git` to install the latest version
-
-**Important Note** : the `Arduino IDE 1.5.x and 1.6.x BETA` are **not** suppported yet. Refer to [issue #45](https://github.com/sudar/Arduino-Makefile/issues/45) in [Arduino-Makefile](https://github.com/sudar/Arduino-Makefile) for more information. Pull requests are welcome there.
 
 #### Linux
 
@@ -74,7 +72,7 @@ $ sudo apt-get install git arduino
 We've made a [Homebrew](http://brew.sh/) `formula` that you can `tap` like [*dat ass*](https://www.youtube.com/watch?v=18gp_NBg43c):
 
 ```Bash
-$ brew tap WeAreLeka/avr
+$ brew tap osx-cross/avr
 $ brew install avr-libc
 $ brew install avrdude
 ```
@@ -94,21 +92,21 @@ Make sure everything is up and running by running `avr-gcc -v` and `avrdude -v`.
 Simply clone the repo:
 
 ```Bash
-$ git clone https://github.com/WeAreLeka/Bare-Arduino-Project path/to/New_Arduino_Project
+$ git clone https://github.com/WeAreLeka/Bare-Arduino-Project ~/MyArduinoProject
 ```
 
 Initialize and update submodules:
 
 ```Bash
-$ cd path/to/New_Arduino_Project
+$ cd ~/dev/MyArduinoProject
 $ git submodule update --init --recursive
 ```
 
 [Create a Github repository](https://github.com/new) and push to it:
 
 ```Bash
-$ cd path/to/New_Arduino_Project
-$ git remote set-url origin https://github.com/{{YOUR GITHUB USERNAME}}/New_Arduino_Project
+$ cd ~/dev/MyArduinoProject
+$ git remote set-url origin https://github.com/{{YOUR GITHUB USERNAME}}/MyArduinoProject
 $ git push --set-upstream origin master
 ```
 
@@ -135,7 +133,7 @@ To make sure you're up and running to hack Arduino, we are going to compile some
 First `cd` to `src/mySecondProject` folder:
 
 ```Bash
-$ cd path/to/New_Arduino_Project
+$ cd ~/dev/MyArduinoProject
 $ cd src/BarProject
 ```
 
@@ -161,3 +159,4 @@ $ make upload
 If it's not working, make sure everything has been installed correctly and check your `Makefile` configuration. Also make sure you are using and `Arduino Uno`.
 
 If nothing seems to help, you can fill an [issue here](https://github.com/WeAreLeka/Bare-Arduino-Project/issues).
+

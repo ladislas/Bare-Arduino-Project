@@ -4,18 +4,18 @@
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
+**Table of Contents** *generated with [DocToc](http://doctoc.herokuapp.com/)*
 
-- [About](#about)
-- [What you get](#what-you-get)
-- [How to install and use](#how-to-install-and-use)
-- [Bugs](#bugs)
-- [Text editors](#text-editors)
-  - [Sublime Text - SublimeClang](#sublime-text---sublimeclang)
-  - [Vim - YouCompleteMe](#vim---youcompleteme)
-  - [Bonus - `.editorconfig`](#bonus---editorconfig)
-- [Contributing](#contributing)
-- [Copyright and License](#copyright-and-license)
+-   [About](#about)
+-   [What you get](#what-you-get)
+-   [How to install and use](#how-to-install-and-use)
+-   [Bugs](#bugs)
+-   [Text editors](#text-editors)
+-   [Sublime Text - SublimeClang](#sublime-text---sublimeclang)
+-   [Vim - YouCompleteMe](#vim---youcompleteme)
+-   [Bonus - `.editorconfig`](#bonus---editorconfig)
+-   [Contributing](#contributing)
+-   [Copyright and License](#copyright-and-license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -23,17 +23,17 @@
 
 Ever wanted to start a new [Arduino](http://arduino.cc/) project and...
 
-*	**not use** the *terrible* Arduino IDE?
-*	**use** your **favorite text editor instead?**
-*	**have** decent **code completion** and **syntax checking**?
-*	**organize** your `directory tree` **as you like?**
-	*	libraries in `lib`
-	*	sources in `src`
-	*	tests in `test`
-	*	binaries in `bin`
-	*	etc.
-*	**use** a newer version of `avr-gcc` such as `4.8.2` or `4.9.1`?
-*	**use** an awesome [`Makefile`](https://github.com/sudar/Arduino-Makefile) to compile and upload your code from the `cli`?
+-   **not use** the *terrible* Arduino IDE?
+-   **use** your **favorite text editor instead?**
+-   **have** decent **code completion** and **syntax checking**?
+-   **organize** your `directory tree` **as you like?**
+    -   libraries in `lib`
+    -   sources in `src`
+    -   tests in `test`
+    -   binaries in `bin`
+    -   etc.
+-   **use** a newer version of `avr-gcc` such as `4.8.x` or `4.9.x`?
+-   **use** an awesome [`Makefile`](https://github.com/sudar/Arduino-Makefile) to compile and upload your code from the `cli`?
 
 If you answered **yes** to one of the above, this [Bare Arduino Project](https://github.com/weareleka/arduino-project) is just what you're looking for! :)
 
@@ -41,12 +41,12 @@ If you answered **yes** to one of the above, this [Bare Arduino Project](https:/
 
 Based on what we've learned on our [Moti project](http://github.com/weareleka/moti), this repo will allow you to:
 
-*	move away from the Arduino IDE and use your favorite text editor such as Vim or SublimeText
-*	get up and running in less time
-*	use `avr-gcc 4.8 or 4.9` to compile your code
-*	use `C++11` for your standard coding
-*	use `make` to compile, `make upload` to upload, thanks to [Sudar](https://github.com/sudar/)'s incredible project [Arduino-Makefile](https://github.com/sudar/Arduino-Makefile)
-*	use our [Travis-CI](https://travis-ci.org) continuous integration configuration and adapt it to suit your needs
+-   move away from the Arduino IDE and use your favorite text editor such as Vim or SublimeText
+-   get up and running in less time
+-   use `avr-gcc 4.8 or 4.9` to compile your code
+-   use `C++11` for your standard coding
+-   use `make` to compile, `make upload` to upload, thanks to [Sudar](https://github.com/sudar/)'s incredible project [Arduino-Makefile](https://github.com/sudar/Arduino-Makefile)
+-   use our [Travis-CI](https://travis-ci.org) continuous integration configuration and adapt it to suit your needs
 
 To put it in a nuttshell, it allows you to **write Arduino code as you ever wanted !**
 
@@ -56,9 +56,9 @@ The full procedure is detailed in [INSTALL.md](./INSTALL.md).
 
 ## Bugs
 
-If you encounter some issues while using the [Bare-Arduino-Project](https://github.com/ladislas/bare-arduino-project), please first report the issue [here in this repo issue tracker](https://github.com/ladislas/bare-arduino-project/issues) and **not in Arduino-Makefile**. 
+If you encounter some issues while using the [Bare-Arduino-Project](https://github.com/ladislas/bare-arduino-project), please first report the issue [here in this repo issue tracker](https://github.com/ladislas/bare-arduino-project/issues) and **not in Arduino-Makefile**.
 
-It will allow us to investigate first and not overflow the Arduino-Makefile issue tracker. 
+It will allow us to investigate first and not overflow the Arduino-Makefile issue tracker.
 
 ## Text editors
 
@@ -80,9 +80,9 @@ Vim is our default text editor and we use the incredible vim plugin [YouComplete
 
 As [Valloric](https://github.com/Valloric) puts it:
 
-> YouCompleteMe is a fast, as-you-type, fuzzy-search code completion engine for Vim. It has several completion engines: an identifier-based engine that works with every programming language, a semantic, Clang-based engine that provides native semantic code completion for C/C++/Objective-C/Objective-C++ (from now on referred to as "the C-family languages"), a Jedi-based completion engine for Python, an OmniSharp-based completion engine for C# and an omnifunc-based completer that uses data from Vim's omnicomplete system to provide semantic completions for many other languages (Ruby, PHP etc.).
+> YouCompleteMe is a fast, as-you-type, fuzzy-search code completion engine for Vim. It has several completion engines: an identifier-based engine that works with every programming language, a semantic, Clang-based engine that provides native semantic code completion for C/C++/Objective-C/Objective-C++ (from now on referred to as "the C-family languages"), a Jedi-based completion engine for Python, an OmniSharp-based completion engine for C\# and an omnifunc-based completer that uses data from Vim's omnicomplete system to provide semantic completions for many other languages (Ruby, PHP etc.).
 
-The [`.ycm_extra_conf.py`](./.ycm_extra_conf.py) file contains everything  you need. ~~Beware that you really need to customize it for it to work properly. Each library must be added by hand to use auto completion.~~ It works right out of the box!
+The [`.ycm_extra_conf.py`](./.ycm_extra_conf.py) file contains everything you need. It should work right out of the box on OS X and need very little modification on Linux!
 
 ### Bonus - `.editorconfig`
 
@@ -94,29 +94,26 @@ Please refer to the [official Editorconfig documentation](http://editorconfig.or
 
 Help is always more than welcome. If you want to take part in this project, please, make sure you read our [Contributing guidelines](./CONTRIBUTING.md).
 
-##Copyright and License
+## Copyright and License
 
-```
-The MIT License (MIT)
+    The MIT License (MIT)
 
-Copyright (c) 2014 Ladislas de Toldi - ladislas at weareleka dot com
+    Copyright (c) 2014 Ladislas de Toldi - ladislas at weareleka dot com
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
-
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
