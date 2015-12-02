@@ -36,7 +36,7 @@ Have fun! :)
 
 ### Important note about bugs and issues
 
-If during or after the installation process, something **does not** work with the [Bare-Arduino-Project](https://github.com/WeAreLeka/bare-arduino-project), please **first report the issue [here** in this repo issue tracker](https://github.com/WeAreLeka/bare-arduino-project/issues) and **not in Arduino-Makefile**.
+If during or after the installation process, something **does not** work with the [Bare-Arduino-Project](https://github.com/WeAreLeka/bare-arduino-project), please **first report the issue [here in this repo issue tracker](https://github.com/WeAreLeka/bare-arduino-project/issues)** and **not in Arduino-Makefile**.
 
 It will allow us to investigate first and not overflow the Arduino-Makefile issue tracker with unrelated issues.
 
@@ -92,20 +92,20 @@ Make sure everything is up and running by running `avr-gcc -v` and `avrdude -v`.
 Simply clone the repo:
 
 ```Bash
-$ git clone https://github.com/WeAreLeka/Bare-Arduino-Project ~/MyArduinoProject
+$ cd ~
+$ git clone https://github.com/WeAreLeka/Bare-Arduino-Project MyArduinoProject
 ```
 
 Initialize and update submodules:
 
 ```Bash
-$ cd ~/dev/MyArduinoProject
+$ cd MyArduinoProject
 $ git submodule update --init --recursive
 ```
 
 [Create a Github repository](https://github.com/new) and push to it:
 
 ```Bash
-$ cd ~/dev/MyArduinoProject
 $ git remote set-url origin https://github.com/{{YOUR GITHUB USERNAME}}/MyArduinoProject
 $ git push --set-upstream origin master
 ```
@@ -125,29 +125,38 @@ Then install `pySerial`:
 ```Bash
 $ pip install pyserial
 ```
+### 4. Copy and edit a `Makefile`
 
-### 4. Test that evrything is up and running
+To make sure you're up and running to hack Arduino, we are going to compile some code. We need to have a Makefile for each project we want to compile.
 
-To make sure you're up and running to hack Arduino, we are going to compile some code.
-
-First `cd` to `src/mySecondProject` folder:
+`cd` to `src/FooProject` folder:
 
 ```Bash
-$ cd ~/dev/MyArduinoProject
-$ cd src/BarProject
+$ cd MyArduinoProject
+$ cd src/FooProject
 ```
 
 Then copy the `Makefile-Example.mk`:
 
 ```Bash
-1 if you are on OS X
+# if you are on OS X
 $ cp ../../Makefile-OSX.mk ./Makefile
 
 # or if you're running Linux
 $ cp ../../Makefile-Linux.mk ./Makefile
 ```
 
-**Don't forget** to modify the `Makefile` to suit your needs.
+Modify the `Makefile` to suit your needs:
+
+* `PROJECT_DIR` is the full path to the root project folder (ex. `PROJECT_DIR = $(HOME)/MyArduinoProject`).
+* `BOARD_TAG` & `BOARD_SUB` define the target board you are compiling to. `BOARD_SUB` is only used in the most recent versions of the IDE (and not in Arduino 1.0.x). To find the proper values:
+  * Open the board defitions file (see `BOARDS_TXT` path when `make` is launched)
+  * Find for the board used (for example *"Arduino Pro or Pro Mini (3.3V, 8 MHz) w/ ATmega328"*)
+  * Look at the config keys for this board (in this case `pro.menu.cpu.8MHzatmega328=ATmega...`)
+  * So `BOARD_TAG = pro` and `BOARD_SUB = 8MHzatmega328`
+* `MONITOR_PORT` is the device full path (required if you want to upload to the board). An example is `/dev/tty.usbserial-A20356BI`
+
+### 5. Compile and upload your code
 
 Then compile and upload your code to an **Arduino Uno**:
 
