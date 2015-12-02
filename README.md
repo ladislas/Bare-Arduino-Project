@@ -35,7 +35,7 @@ Ever wanted to start a new [Arduino](http://arduino.cc/) project and...
 -   **use** a newer version of `avr-gcc` such as `4.8.x` or `4.9.x`?
 -   **use** an awesome [`Makefile`](https://github.com/sudar/Arduino-Makefile) to compile and upload your code from the `cli`?
 
-If you answered **yes** to one of the above, this [Bare Arduino Project](https://github.com/weareleka/arduino-project) is just what you're looking for! :)
+If you answered **yes** to one of the above, this [Bare Arduino Project](https://github.com/ladislas/bare-arduino-project) is just what you're looking for! :)
 
 ## What you get
 
@@ -98,7 +98,7 @@ Help is always more than welcome. If you want to take part in this project, plea
 
     The MIT License (MIT)
 
-    Copyright (c) 2014 Ladislas de Toldi - ladislas at weareleka dot com
+    Copyright (c) 2014 Ladislas de Toldi - ladislas at leka dot io
 
     Permission is hereby granted, free of charge, to any person obtaining a copy
     of this software and associated documentation files (the "Software"), to deal

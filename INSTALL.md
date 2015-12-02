@@ -37,7 +37,7 @@ Have fun! :)
 
 ### Important note about bugs and issues
 
-If during or after the installation process, something **does not** work with the [Bare-Arduino-Project](https://github.com/WeAreLeka/bare-arduino-project), please **first report the issue [here in this repo issue tracker](https://github.com/WeAreLeka/bare-arduino-project/issues)** and **not in Arduino-Makefile**.
+If during or after the installation process, something **does not** work with the [Bare-Arduino-Project](https://github.com/ladislas/bare-arduino-project), please **first report the issue [here in this repo issue tracker](https://github.com/ladislas/bare-arduino-project/issues)** and **not in Arduino-Makefile**.
 
 It will allow us to investigate first and not overflow the Arduino-Makefile issue tracker with unrelated issues.
 
@@ -94,7 +94,7 @@ Simply clone the repo:
 
 ```Bash
 $ cd ~
-$ git clone https://github.com/WeAreLeka/Bare-Arduino-Project MyArduinoProject
+$ git clone https://github.com/ladislas/Bare-Arduino-Project MyArduinoProject
 ```
 
 Initialize and update submodules:
@@ -168,5 +168,5 @@ $ make upload
 
 If it's not working, make sure everything has been installed correctly and check your `Makefile` configuration. Also make sure you are using and `Arduino Uno`.
 
-If nothing seems to help, you can fill an [issue here](https://github.com/WeAreLeka/Bare-Arduino-Project/issues).
+If nothing seems to help, you can fill an [issue here](https://github.com/ladislas/Bare-Arduino-Project/issues).
 
