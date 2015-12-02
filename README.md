@@ -6,16 +6,16 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents** *generated with [DocToc](http://doctoc.herokuapp.com/)*
 
--   [About](#about)
--   [What you get](#what-you-get)
--   [How to install and use](#how-to-install-and-use)
--   [Bugs](#bugs)
--   [Text editors](#text-editors)
--   [Sublime Text - SublimeClang](#sublime-text---sublimeclang)
--   [Vim - YouCompleteMe](#vim---youcompleteme)
--   [Bonus - `.editorconfig`](#bonus---editorconfig)
--   [Contributing](#contributing)
--   [Copyright and License](#copyright-and-license)
+- [About](#about)
+- [What you get](#what-you-get)
+- [How to install and use](#how-to-install-and-use)
+- [Bugs](#bugs)
+- [Text editors](#text-editors)
+  - [Sublime Text - SublimeClang](#sublime-text---sublimeclang)
+  - [Vim - YouCompleteMe](#vim---youcompleteme)
+  - [Bonus - `.editorconfig`](#bonus---editorconfig)
+- [Contributing](#contributing)
+- [Copyright and License](#copyright-and-license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

@@ -3,8 +3,8 @@
 **Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
 
 - [Contributing to Bare-Arduino-Project](#contributing-to-bare-arduino-project)
-	- [Getting Started](#getting-started)
-	- [Making Changes](#making-changes)
+  - [Getting Started](#getting-started)
+  - [Making Changes](#making-changes)
 - [Additional Resources](#additional-resources)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->

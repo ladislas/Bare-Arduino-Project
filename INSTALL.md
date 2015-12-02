@@ -16,7 +16,8 @@
     - [Linux](#linux-1)
   - [2. Clone `Bare-Arduino-Project` repository from Github](#2-clone-bare-arduino-project-repository-from-github)
   - [3. Install `pySerial`](#3-install-pyserial)
-  - [4. Test that evrything is up and running](#4-test-that-evrything-is-up-and-running)
+  - [4. Copy and edit a `Makefile`](#4-copy-and-edit-a-makefile)
+  - [5. Compile and upload your code](#5-compile-and-upload-your-code)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
