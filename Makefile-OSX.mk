@@ -19,13 +19,13 @@ ARDMK_DIR         = $(PROJECT_DIR)/Arduino-Makefile
 ### ARDUINO_DIR
 ### Path to the Arduino application and ressources directory.
 ### For Arduino IDE 1.0.x
-ARDUINO_DIR       = /Applications/Arduino.app/Contents/Resources/Java
+# ARDUINO_DIR       = /Applications/Arduino.app/Contents/Resources/Java
 ### For Arduino IDE 1.6.x
-# ARDUINO_DIR       = /Applications/Arduino.app/Contents/Java
+ARDUINO_DIR       = /Applications/Arduino.app/Contents/Java
 
 ### USER_LIB_PATH
 ### Path to where the your project's libraries are stored.
-USER_LIB_PATH     :=  $(realpath $(PROJECT_DIR)/lib)
+USER_LIB_PATH    :=  $(realpath $(PROJECT_DIR)/lib)
 
 ### BOARD_TAG & BOARD_SUB
 ### For Arduino IDE 1.0.x
@@ -57,11 +57,11 @@ CXXFLAGS_STD      = -std=gnu++11
 
 ### CPPFLAGS
 ### Flags you might want to set for debugging purpose. Comment to stop.
-CXXFLAGS         = -pedantic -Wall -Wextra
+CXXFLAGS          = -pedantic -Wall -Wextra
 
 ### If avr-gcc -v is higher than 4.9, activate coloring of the output
 ifeq "$(AVR_GCC_VERSION)" "1"
-    CXXFLAGS += -fdiagnostics-color
+    CXXFLAGS     += -fdiagnostics-color
 endif
 
 ### MONITOR_PORT
