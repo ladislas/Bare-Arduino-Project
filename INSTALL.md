@@ -151,7 +151,7 @@ Modify the `Makefile` to suit your needs:
 
 * `PROJECT_DIR` is the full path to the root project folder (ex. `PROJECT_DIR = $(HOME)/MyArduinoProject`).
 * `BOARD_TAG` & `BOARD_SUB` define the target board you are compiling to. `BOARD_SUB` is only used in the most recent versions of the IDE (and not in Arduino 1.0.x). To find the proper values:
-  * Open the board defitions file (see `BOARDS_TXT` path when `make` is launched)
+  * Open the board definitions file (see `BOARDS_TXT` path when `make` is launched)
   * Find for the board used (for example *"Arduino Pro or Pro Mini (3.3V, 8 MHz) w/ ATmega328"*)
   * Look at the config keys for this board (in this case `pro.menu.cpu.8MHzatmega328=ATmega...`)
   * So `BOARD_TAG = pro` and `BOARD_SUB = 8MHzatmega328`
