@@ -5,7 +5,7 @@
 
 ### PROJECT_DIR
 ### This is the path to where you have created/cloned your project
-PROJECT_DIR       = /home/{{ YOUR USERNAME }}/MyArduinoProject
+PROJECT_DIR       = $(shell dirname $(shell dirname $(shell pwd)))
 
 ### AVR_GCC_VERSION
 ### Check if the version is equal or higher than 4.9
@@ -53,7 +53,7 @@ CXXFLAGS_STD      = -std=gnu++11
 
 ### CPPFLAGS
 ### Flags you might want to set for debugging purpose. Comment to stop.
-CXXFLAGS         = -pedantic -Wall -Wextra
+CXXFLAGS          = -pedantic -Wall -Wextra
 
 ### If avr-gcc -v is higher than 4.9, activate coloring of the output
 ifeq "$(AVR_GCC_VERSION)" "1"
@@ -61,8 +61,9 @@ ifeq "$(AVR_GCC_VERSION)" "1"
 endif
 
 ### MONITOR_PORT
-### The port your board is connected to. Using an '*' tries all the ports and finds the right one.
-MONITOR_PORT      = /dev/tty.usbmodem*
+### The port your board is connected to. Using an '*' tries all the ports and finds the right one. Choose one of the two.
+MONITOR_PORT      = /dev/ttyUSB*
+# MONITOR_PORT      = /dev/ttyACM*
 
 ### don't touch this
 CURRENT_DIR       = $(shell basename $(CURDIR))
