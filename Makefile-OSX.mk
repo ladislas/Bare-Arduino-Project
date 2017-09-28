@@ -44,9 +44,9 @@ MONITOR_BAUDRATE  = 115200
 ### Path to the AVR tools directory such as avr-gcc, avr-g++, etc.
 AVR_TOOLS_DIR     = /usr/local
 
-### AVRDDUDE
+### AVRDUDE
 ### Path to avrdude directory.
-AVRDDUDE          = /usr/local/bin/avrdude
+AVRDUDE          = /usr/local/bin/avrdude
 
 ### CFLAGS_STD
 CFLAGS_STD        = -std=gnu11
@@ -74,4 +74,3 @@ OBJDIR            = $(PROJECT_DIR)/bin/$(CURRENT_DIR)/$(BOARD_TAG)
 
 ### path to Arduino.mk, inside the ARDMK_DIR, don't touch.
 include $(ARDMK_DIR)/Arduino.mk
-
