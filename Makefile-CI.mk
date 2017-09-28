@@ -35,9 +35,9 @@ MONITOR_BAUDRATE  = 115200
 ### Path to the AVR tools directory such as avr-gcc, avr-g++, etc.
 AVR_TOOLS_DIR     =
 
-### AVRDDUDE
+### AVRDUDE
 ### Path to avrdude directory.
-AVRDDUDE          = /usr/bin/avrdude
+AVRDUDE          = /usr/bin/avrdude
 
 ### CFLAGS_STD
 CFLAGS_STD        = -std=gnu11
