@@ -74,7 +74,7 @@ We've made a [Homebrew](http://brew.sh/) `formula` that you can `tap` like [*dat
 
 ```Bash
 $ brew tap osx-cross/avr
-$ brew install avr-libc
+$ brew install avr-gcc
 $ brew install avrdude
 ```
 

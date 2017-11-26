@@ -2,6 +2,13 @@
 
 # Bare Arduino Project
 
+## Important notice
+
+> I'm not using this project as much as I used to and might be slow at answering issues or PR's.
+> I am slowly moving out of Arduino-Makefile in favor of [PlatformIO](http://docs.platformio.org/en/latest/).
+> I've ported their basic toolchain so you can still use the latest avr-gcc toolchain and stuff.
+> Take a look here and let me know what you think: [osx-cross/platform-osxcrossavr](https://github.com/osx-cross/platform-osxcrossavr)
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents** *generated with [DocToc](http://doctoc.herokuapp.com/)*
@@ -32,7 +39,7 @@ Ever wanted to start a new [Arduino](http://arduino.cc/) project and...
     -   tests in `test`
     -   binaries in `bin`
     -   etc.
--   **use** a newer version of `avr-gcc` such as `4.8.x` or `4.9.x`?
+-   **use** a newer version of `avr-gcc` such as `7.2` or `6.4`?
 -   **use** an awesome [`Makefile`](https://github.com/sudar/Arduino-Makefile) to compile and upload your code from the `cli`?
 
 If you answered **yes** to one of the above, this [Bare Arduino Project](https://github.com/ladislas/bare-arduino-project) is just what you're looking for! :)
@@ -43,8 +50,8 @@ Based on what we've learned on our [Moti project](http://github.com/weareleka/mo
 
 -   move away from the Arduino IDE and use your favorite text editor such as Vim or SublimeText
 -   get up and running in less time
--   use `avr-gcc 4.8 or 4.9` to compile your code
--   use `C++11` for your standard coding
+-   use `avr-gcc 7.2` to compile your code
+-   use `C++14` for your standard coding
 -   use `make` to compile, `make upload` to upload, thanks to [Sudar](https://github.com/sudar/)'s incredible project [Arduino-Makefile](https://github.com/sudar/Arduino-Makefile)
 -   use our [Travis-CI](https://travis-ci.org) continuous integration configuration and adapt it to suit your needs
 
@@ -66,7 +73,9 @@ Because we are so awesome, we also provide your with 2 famous text editors confi
 
 ### Sublime Text - SublimeClang
 
-To code in C/C++, we highly recommend using [SublimeClang](https://github.com/quarnster/SublimeClang), even if the plugin is not maintained anymore. As far as we can tell, it works beautifully well and will save you a lot of time! :)
+*Note: I haven't used SublimeText for developping in C/C++ for years, so the following might not work as expected.*
+
+To code in C/C++, we highly recommend using [SublimeClang](https://github.com/boxdot/SublimeClang), ~~even if the plugin is not maintained anymore~~ (this fork seems to be up-to-date). ~~As far as we can tell, it works beautifully well and will save you a lot of time!~~ :)
 
 As [quarnster](https://github.com/quarnster/) puts it:
 
