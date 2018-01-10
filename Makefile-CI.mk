@@ -1,6 +1,6 @@
 ### DISCLAIMER
 ### This is an example Makefile and it MUST be configured to suit your needs.
-### For detailled explanations about all the avalaible options,
+### For detailed explanations about all the available options,
 ### please refer to https://github.com/sudar/Arduino-Makefile/blob/master/arduino-mk-vars.md
 
 ### PROJECT_DIR
@@ -16,7 +16,7 @@ AVR_GCC_VERSION  := $(shell expr `avr-gcc -dumpversion | cut -f1` \>= 4.9)
 ARDMK_DIR         = $(PROJECT_DIR)/Arduino-Makefile
 
 ### ARDUINO_DIR
-### Path to the Arduino application and ressources directory.
+### Path to the Arduino application and resources directory.
 ARDUINO_DIR       =
 
 ### USER_LIB_PATH
