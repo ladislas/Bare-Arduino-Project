@@ -5,11 +5,7 @@
 
 ### PROJECT_DIR
 ### This is the path to where you have created/cloned your project
-PROJECT_DIR       = $(shell dirname $(shell dirname $(shell pwd)))
-
-### AVR_GCC_VERSION
-### Check if the version is equal or higher than 4.9
-AVR_GCC_VERSION  := $(shell expr `avr-gcc -dumpversion | cut -f1` \>= 4.9)
+PROJECT_DIR       = $(shell dirname $(shell pwd))
 
 ### ARDMK_DIR
 ### Path to the Arduino-Makefile directory.
@@ -33,6 +29,11 @@ USER_LIB_PATH     :=  $(realpath $(PROJECT_DIR)/lib)
 BOARD_TAG         = mega
 BOARD_SUB         = atmega2560
 
+### MONITOR_PORT
+### The port your board is connected to. Using an '*' tries all the ports and finds the right one. Choose one of the two.
+MONITOR_PORT      = /dev/ttyUSB*
+# MONITOR_PORT      = /dev/ttyACM*
+
 ### MONITOR_BAUDRATE
 ### It must be set to Serial baudrate value you are using.
 MONITOR_BAUDRATE  = 115200
@@ -43,35 +44,28 @@ AVR_TOOLS_DIR     = /usr
 
 ### AVRDUDE
 ### Path to avrdude directory.
-AVRDUDE          = /usr/bin/avrdude
+AVRDUDE           = /usr/bin/avrdude
 
 ### CFLAGS_STD
 CFLAGS_STD        = -std=gnu11
 
 ### CXXFLAGS_STD
-CXXFLAGS_STD      = -std=gnu++11
+### You can choose wich ever you like
+# CXXFLAGS_STD      = -std=gnu++11
+CXXFLAGS_STD      = -std=gnu++17
+
 
 ### CPPFLAGS
 ### Flags you might want to set for debugging purpose. Comment to stop.
-CXXFLAGS          = -pedantic -Wall -Wextra
-
-### If avr-gcc -v is higher than 4.9, activate coloring of the output
-ifeq "$(AVR_GCC_VERSION)" "1"
-    CXXFLAGS += -fdiagnostics-color
-endif
-
-### MONITOR_PORT
-### The port your board is connected to. Using an '*' tries all the ports and finds the right one. Choose one of the two.
-MONITOR_PORT      = /dev/ttyUSB*
-# MONITOR_PORT      = /dev/ttyACM*
-
-### don't touch this
-CURRENT_DIR       = $(shell basename $(CURDIR))
+CXXFLAGS         += -pedantic -Wall -Wextra
+LDFLAGS          += -fdiagnostics-color
 
 ### OBJDIR
+### Don't touch this!
 ### This is were you put the binaries you just compile using 'make'
 CURRENT_DIR       = $(shell basename $(CURDIR))
-OBJDIR            = $(PROJECT_DIR)/bin/$(CURRENT_DIR)/$(BOARD_TAG)
+OBJDIR            = $(PROJECT_DIR)/build/$(CURRENT_DIR)/$(BOARD_TAG)
 
 ### path to Arduino.mk, inside the ARDMK_DIR, don't touch.
 include $(ARDMK_DIR)/Arduino.mk
+

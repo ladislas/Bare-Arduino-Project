@@ -10,7 +10,7 @@ echo "Downloading $ARDUINO_BASENAME from $ARDUINO_URL"
 wget "$ARDUINO_URL" -O "$ARDUINO_FILE"
 
 echo "Unzipping $ARDUINO_BASENAME"
-tar -xzf "$ARDUINO_FILE"
+tar xf "$ARDUINO_FILE"
 
 echo "Installing avr-gcc to $AVR_GCC"
 sudo mv "$ARDUINO_BASENAME/hardware/tools/avr" "$AVR_GCC"
@@ -21,3 +21,4 @@ sudo mv "$ARDUINO_BASENAME/" "$ARDUINO"
 echo "Installation of dependencies is complete, we are now going to run some tests..."
 
 source "$SCRIPTS_DIR/runtests.sh"
+
