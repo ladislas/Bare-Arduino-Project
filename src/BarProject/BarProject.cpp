@@ -1,6 +1,7 @@
 #include <Arduino.h>
 #include <Wire.h>
 #include "BarLib.h"
+#include "FooLib.h"
 
 BarClass BarObject;
 

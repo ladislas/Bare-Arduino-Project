@@ -22,7 +22,8 @@ flags = [
   ,'c++'
 
   # Avr-libc flags installed with homebrew
-  ,"-isystem/usr/local/Cellar/avr-gcc/7.2.0/avr/include"
+  # ,"-isystem/usr/local/Cellar/avr-gcc/7.2.0/avr/include"
+  ,"-isystem/usr/local/Cellar/avr-gcc/8.3.0/avr/include"
 
   # IDE 1.6.3
   ,'-I/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino'

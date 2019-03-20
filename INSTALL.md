@@ -115,17 +115,18 @@ $ git push --set-upstream origin master
 
 To upload the program, we need to reset the Arduino board. This is done using a `python script` stored in `./Arduino-Makefile/bin`
 
-First, if you don't already have Python, you can install it using Homebrew on OS X:
+First, if you don't already have Python 2 & 3, you can install it using Homebrew on OS X:
 
 ```Bash
-$ brew install python
+$ brew install python python@2
 ```
 
 Then install `pySerial`:
 
 ```Bash
-$ pip install pyserial
+$ pip install pyserial & pip2 install pyserial
 ```
+
 ### 4. Copy and edit a `Makefile`
 
 To make sure you're up and running to hack Arduino, we are going to compile some code. We need to have a Makefile for each project we want to compile.
