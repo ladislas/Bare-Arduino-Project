@@ -1,6 +1,6 @@
 ### DISCLAIMER
 ### This is an example Makefile and it MUST be configured to suit your needs.
-### For detailled explanations about all the avalaible options,
+### For detailed explanations about all the available options,
 ### please refer to https://github.com/sudar/Arduino-Makefile/blob/master/arduino-mk-vars.md
 
 ### PROJECT_DIR
@@ -12,7 +12,7 @@ PROJECT_DIR       = $(shell dirname $(shell pwd))
 ARDMK_DIR         = $(PROJECT_DIR)/Arduino-Makefile
 
 ### ARDUINO_DIR
-### Path to the Arduino application and ressources directory.
+### Path to the Arduino application and resources directory.
 ### For Arduino IDE 1.0.x
 # ARDUINO_DIR       = /Applications/Arduino.app/Contents/Resources/Java
 ### For Arduino IDE 1.6.x ++
