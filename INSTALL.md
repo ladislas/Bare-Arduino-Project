@@ -170,4 +170,3 @@ $ make upload
 If it's not working, make sure everything has been installed correctly and check your `Makefile` configuration. Also make sure you are using and `Arduino Uno`.
 
 If nothing seems to help, you can fill an [issue here](https://github.com/ladislas/Bare-Arduino-Project/issues).
-

@@ -2,11 +2,7 @@
 
 # Bare Arduino Project
 
-## Important notice
-
-> ~~I'm not using this project as much as I used to and might be slow at answering issues or PR's.
-> I am slowly moving out of Arduino-Makefile in favor of PlatformIO
-> I've ported their basic toolchain so you can still use the latest avr-gcc toolchain and stuff.~~
+⚠️ ***For mbed projects, see [Bare mbed Project](https://github.com/ladislas/Bare-mbed-Project).***
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
