@@ -5,7 +5,7 @@
 
 ### PROJECT_DIR
 ### This is the path to where you have created/cloned your project
-PROJECT_DIR       = $(shell dirname $(shell pwd))
+PROJECT_DIR       = $(shell dirname $(shell dirname $(shell pwd)))
 
 ### ARDMK_DIR
 ### Path to the Arduino-Makefile directory.
@@ -20,7 +20,7 @@ ARDUINO_DIR       = /Applications/Arduino.app/Contents/Java
 
 ### USER_LIB_PATH
 ### Path to where the your project's libraries are stored.
-USER_LIB_PATH    :=  $(realpath $(PROJECT_DIR)/lib)
+USER_LIB_PATH    :=  $(PROJECT_DIR)/lib
 
 ### BOARD_TAG & BOARD_SUB
 ### For Arduino IDE 1.0.x

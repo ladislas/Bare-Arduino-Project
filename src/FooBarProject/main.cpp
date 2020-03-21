@@ -1,23 +1,21 @@
 #include <Arduino.h>
 #include <Wire.h>
-#include "BarLib.h"
-#include "FooLib.h"
 
-BarClass BarObject;
+#include "Config.h"
 
 void setup() {
 
 	Serial.begin(115200);
-	delay(1000);
+	delay(loopDelay);
 
 }
 
 void loop() {
 
 	BarObject.firstBarMethod();
-	delay(1000);
+	delay(loopDelay);
 	BarObject.secondBarMethod();
-	delay(1000);
+	delay(loopDelay);
 
 }
 
