@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/ladislas/Bare-Arduino-Project.svg?branch=master)](https://travis-ci.org/ladislas/Bare-Arduino-Project)
-
 # Bare Arduino Project
 
 ⚠️ ***For mbed projects, see [Bare mbed Project](https://github.com/ladislas/Bare-mbed-Project).***

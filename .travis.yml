@@ -1,4 +1,0 @@
-language: c
-compiler:
-  - gcc
-script: script/bootstrap.sh
