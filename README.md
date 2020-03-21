@@ -34,23 +34,22 @@ Ever wanted to start a new [Arduino](http://arduino.cc/) project and...
     -   tests in `test`
     -   binaries in `bin`
     -   etc.
--   **use** a newer version of `avr-gcc` such as `8.3.0`?
+-   **use** a newer version of `avr-gcc` such as `9.2.0`?
 -   **use** an awesome [`Makefile`](https://github.com/sudar/Arduino-Makefile) to compile and upload your code from the `cli`?
 
 If you answered **yes** to one of the above, this [Bare Arduino Project](https://github.com/ladislas/bare-arduino-project) is just what you're looking for! :)
 
 ## What you get
 
-Based on what we've learned on our [Moti project](http://github.com/weareleka/moti), this repo will allow you to:
+Based on what we've learned from our [Moti project](http://github.com/weareleka/moti), this repo will allow you to:
 
 -   move away from the Arduino IDE and use your favorite text editor such as Vim or SublimeText
 -   get up and running in less time
--   use `avr-gcc 8.3.0` to compile your code
+-   use the latest version of `avr-gcc 9.x.x` to compile your code
 -   use `C++17` for your standard coding
 -   use `make` to compile, `make upload` to upload, thanks to [Sudar](https://github.com/sudar/)'s incredible project [Arduino-Makefile](https://github.com/sudar/Arduino-Makefile)
--   use our [Travis-CI](https://travis-ci.org) continuous integration configuration and adapt it to suit your needs
 
-To put it in a nuttshell, it allows you to **write Arduino code as you ever wanted !**
+To put it in a nutshell, it allows you to **write Arduino code the way you've always wanted!**
 
 ## How to install and use
 
@@ -58,7 +57,7 @@ The full procedure is detailed in [INSTALL.md](./INSTALL.md).
 
 ## Bugs
 
-If you encounter some issues while using the [Bare-Arduino-Project](https://github.com/ladislas/bare-arduino-project), please first report the issue [here in this repo issue tracker](https://github.com/ladislas/bare-arduino-project/issues) and **not in Arduino-Makefile**.
+⚠️ If you encounter some issues while using the [Bare-Arduino-Project](https://github.com/ladislas/bare-arduino-project), please first report the issue [here in this repo issue tracker](https://github.com/ladislas/bare-arduino-project/issues) and **not in Arduino-Makefile**.
 
 It will allow us to investigate first and not overflow the Arduino-Makefile issue tracker.
 
@@ -68,7 +67,7 @@ Because we are so awesome, we also provide your with 2 famous text editors confi
 
 ### Sublime Text - SublimeClang
 
-*Note: I haven't used SublimeText for developping in C/C++ for years, so the following might not work as expected.*
+⚠️ *Note: I haven't used SublimeText for developping in C/C++ for years, so the following might not work as expected.*
 
 To code in C/C++, we highly recommend using [SublimeClang](https://github.com/boxdot/SublimeClang), ~~even if the plugin is not maintained anymore~~ (this fork seems to be up-to-date). ~~As far as we can tell, it works beautifully well and will save you a lot of time!~~ :)
 
@@ -86,7 +85,7 @@ As [Valloric](https://github.com/Valloric) puts it:
 
 > YouCompleteMe is a fast, as-you-type, fuzzy-search code completion engine for Vim. It has several completion engines: an identifier-based engine that works with every programming language, a semantic, Clang-based engine that provides native semantic code completion for C/C++/Objective-C/Objective-C++ (from now on referred to as "the C-family languages"), a Jedi-based completion engine for Python, an OmniSharp-based completion engine for C\# and an omnifunc-based completer that uses data from Vim's omnicomplete system to provide semantic completions for many other languages (Ruby, PHP etc.).
 
-The [`.ycm_extra_conf.py`](./.ycm_extra_conf.py) file contains everything you need. It should work right out of the box on OS X and need very little modification on Linux!
+The [`.ycm_extra_conf.py`](./.ycm_extra_conf.py) file contains everything you need. It should work right out of the box on macOS and need very little modification on Linux!
 
 ### Bonus - `.editorconfig`
 
