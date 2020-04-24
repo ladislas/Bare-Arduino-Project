@@ -47,9 +47,11 @@ It will allow us to investigate first and not overflow the Arduino-Makefile issu
 
 Before starting, please make sure you have those installed:
 
-*	[Arduino IDE 1.0.x or 1.6.x](http://arduino.cc/en/main/software#toc2) - Download the app from the website
-*	[Homebrew](http://mxcl.github.io/homebrew/) - Follow the instructions on their website
+*	[Arduino IDE (latest version)(1)](http://arduino.cc/en/main/software#toc2) - Download the app from the website
+*	[Homebrew](https://brew.sh) - Follow the instructions on their website
 *	[Git](http://git-scm.com/) - use `brew install git` to install the latest version
+
+(1): Follow the requirements of [sudar/Arduino-Makefile](https://github.com/sudar/Arduino-Makefile/).
 
 #### Linux
 
