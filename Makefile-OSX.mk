@@ -47,6 +47,7 @@ AVR_TOOLS_DIR     = /usr/local
 ### AVRDUDE
 ### Path to avrdude directory.
 AVRDUDE           = /usr/local/bin/avrdude
+AVRDUDE_OPTS      = -v -v
 
 ### CFLAGS_STD
 CFLAGS_STD        = -std=gnu11

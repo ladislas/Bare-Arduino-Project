@@ -1,6 +1,5 @@
-#include <Arduino.h>
-#include <Wire.h>
-
+#include "Arduino.h"
+#include "Wire.h"
 #include "Config.h"
 
 void setup() {
@@ -14,7 +13,14 @@ void loop() {
 
 	BarObject.firstBarMethod();
 	delay(loopDelay);
+
 	BarObject.secondBarMethod();
+	delay(loopDelay);
+
+	addFunctionReference(2, 40, Serial);
+	delay(loopDelay);
+
+	addFunctionPointer(40, 2, &Serial);
 	delay(loopDelay);
 
 }
