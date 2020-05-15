@@ -32,7 +32,7 @@ Ever wanted to start a new [Arduino](http://arduino.cc/) project and...
     -   tests in `test`
     -   binaries in `bin`
     -   etc.
--   **use** a newer version of `avr-gcc` such as `9.2.0`?
+-   **use** a newer version of `avr-gcc` such as `9.x.x`?
 -   **use** an awesome [`Makefile`](https://github.com/sudar/Arduino-Makefile) to compile and upload your code from the `cli`?
 
 If you answered **yes** to one of the above, this [Bare Arduino Project](https://github.com/ladislas/bare-arduino-project) is just what you're looking for! :)
