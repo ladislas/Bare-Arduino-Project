@@ -160,7 +160,13 @@ Modify the `Makefile` to suit your needs:
   * So `BOARD_TAG = pro` and `BOARD_SUB = 8MHzatmega328`
 * `MONITOR_PORT` is the device full path (required if you want to upload to the board). An example is `/dev/tty.usbserial-A20356BI`
 
-For the SAM (Arduino ARM boards), relevant informations can be found in the upstream Makefile [repository](https://github.com/sudar/Arduino-Makefile#arduino-arm-boards). It is important to use only the `BOARD_TAG` for board definitions which can be found in the `ARDUINO_PACKAGE_DIR` - which is generally located in the user's home location under '.arduino15/packages' directory.
+For the SAM (Arduino ARM boards), relevant informations can be found in the upstream Makefile [repository](https://github.com/sudar/Arduino-Makefile#arduino-arm-boards). It is important to use only the `BOARD_TAG` for board definitions which can be found in the `ARDUINO_PACKAGE_DIR`.
+
+#### OS X
+It is located at '/home/user/Library/Arduino15/packages'.
+
+#### Linux
+It is located at '/home/user/.arduino15/packages'.
 
 ### 5. Compile and upload your code
 
