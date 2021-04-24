@@ -128,10 +128,6 @@ Then install `pySerial`:
 ```Bash
 $ python3 -m pip install -U --user pyserial
 ```
-To install pySerial on OS X: Download pyserial from [PyPI](https://pypi.org/project/pyserial/#files), unpackage the download, and CD into the folder. Then run the following command:
-```Bash
-$ sudo python3 setup.py install
-```
 
 ### 4. Copy and edit a `Makefile`
 
