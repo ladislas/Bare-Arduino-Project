@@ -120,13 +120,13 @@ To upload the program, we need to reset the Arduino board. This is done using a 
 First, if you don't already have Python 2 & 3, you can install it using Homebrew on OS X:
 
 ```Bash
-$ brew install python python@2
+$ brew install python
 ```
 
 Then install `pySerial`:
 
 ```Bash
-$ pip install pyserial & pip2 install pyserial
+$ python3 -m pip install -U --user pyserial
 ```
 
 ### 4. Copy and edit a `Makefile`
